@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja Benzynowa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form">
+            <header>
+                <img src="./stacja2.png" alt="stacja">
+                <h1>Stacja paliw</h1>
+            </header>
+            <h3>Wybierz rodzaj paliwa:</h3>
+            <div class="paliwa">
+                <label for="ropa">
+                    <input type="radio" name="paliwo" id="ropa">
+                    Ropa naftowa 7.50zł/l
+                </label>
+                <label for="benzyna">
+                    <input type="radio" name="paliwo" id="benzyna">
+                    Benzyna 6.70zł/l
+                </label>
+            </div>
+            <div class="result">
+                <input type="text" name="ilosc" id="ilosc" placeholder="Podaj ilość litrów paliwa">
+                <button type="button">policz</button>
+            </div>
+            <p class="res"></p>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
